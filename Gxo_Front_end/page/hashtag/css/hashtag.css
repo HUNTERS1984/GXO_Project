@@ -1,0 +1,83 @@
+
+#hashtag.section{
+    position: relative;
+}
+/* Title Section */
+#hashtag.section .header-section .contain-title-section-page{
+    padding: 70px 0 60px;
+    background: #283c50;
+}
+#hashtag.section .contain-title-section-page h2.title-section {
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 500;
+    color: #5693f0;
+    text-align: center;
+    margin:0 0 10px;
+}
+#hashtag.section .contain-title-section-page p.sub-title {
+    font-size: 16px;
+    color: #2b3539;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+/* Wrap date time Header */
+#hashtag.section .header-section .wrap-date-time-page {
+    padding: 65px 0 25px;
+}
+#hashtag.section .header-section .wrap-date-time-page p.text {
+    text-align: right;
+    font-size: 18px;
+    color: #505A5E;
+    font-weight: 600;
+}
+#hashtag.section .header-section .wrap-date-time-page p.text span.blue {
+    color: #3497cc;
+}
+/*-------------------------*/
+/* Hashtag */
+/*-------------------------*/
+#hashtag .wrap-item-hashtag{
+    display: none;
+}
+#hashtag .row-hashtag {
+    padding: 25px 80px 25px 45px;
+    border: 2px solid #c8d2d6;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    background: #fff;
+}
+#hashtag .row-hashtag p{
+    margin-bottom: 0;
+    color: #505a5e;
+}
+
+#hashtag .row-hashtag .wrap-arrow {
+    position: absolute;
+    width: 65px;
+    background: #fafafa;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+@media (max-width: 768px){
+    #hashtag .row-hashtag .wrap-arrow {
+        background: none;
+    }
+}
+#hashtag .row-hashtag .wrap-arrow div.table {
+    height: 100%;
+    display: table;
+    margin-bottom: 0;
+}
+#hashtag .row-hashtag .wrap-arrow div.table .table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}

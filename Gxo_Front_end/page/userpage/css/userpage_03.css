@@ -1,0 +1,142 @@
+
+#userpage_03.section{
+    position: relative;
+}
+/* Title Section */
+#userpage_03.section .header-section .contain-title-section-page{
+    padding: 40px 0 30px;
+    background: #283c50;
+}
+#userpage_03.section .contain-title-section-page .avatar{
+    margin-right: 20px;
+    max-width: 120px;
+    border: 2px solid #cdd4d8;
+}
+#userpage_03.section .contain-title-section-page h2.husername {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin:30px 0 10px;
+}
+#userpage_03.section .contain-title-section-page p.sub-title {
+    font-size: 16px;
+    color: #2b3539;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+}
+#userpage_03.section .action-page{
+    margin: 35px 0;
+    height: 50px;
+    line-height: 38px;
+    background: #425365;
+    color: #fff;
+    min-width: 325px;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s
+}
+#userpage_03.section .action-page.active,#userpage_03.section .action-page:hover{
+    background: #5693f0;
+    border: 1px solid #5693f0;
+}
+@media (max-width: 768px){
+    #userpage_03.section .action-page{
+        width: 100%;min-width: 0;
+    }
+}
+/* Wrap date time Header */
+#userpage_03.section .header-section .wrap-status {
+    padding: 55px 0 65px;
+}
+@media (max-width: 768px){
+    #userpage_03.section .header-section .wrap-status {
+        padding: 45px 0;
+    }
+}
+#userpage_03.section .header-section .wrap-status a{
+    border: 1px solid #ced2d6;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+#userpage_03.section .header-section .wrap-status a.disabled{
+    background: #e2e6ea;
+    color: #a0a9ae;
+}
+/*-------------------------*/
+/* Recommend */
+/*-------------------------*/
+/* item Recommend*/
+#userpage_03 .body-section p.sub-content{
+    color: #96a0a4;
+    margin: 75px 0 50px;
+}
+#userpage_03 .body-section{
+    margin-top: -60px;
+}
+#userpage_03 .body-section .wrap-item-userpage_03{
+    display: none;
+    position: relative;
+    text-align: justify;
+}
+#userpage_03 .body-section .item-userpage_03 {
+    position: relative;
+    margin-top: 60px;
+}
+#userpage_03 .body-section .item-userpage_03 .tag a{
+    margin-right: 10px;
+    font-weight: bold;
+}
+#userpage_03 .body-section .item-userpage_03 p.date-post{
+    color:#c0c3c4;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+#userpage_03 .body-section .item-userpage_03 .wrap-img {
+    position: relative;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+#userpage_03 .body-section .item-userpage_03 .wrap-img span.number {
+    position: absolute;
+    padding: 6px 17px;
+    font-size: 25px;
+    background: #5693f0;
+    color: white;
+    top: 0px;
+    left: 0px;
+}
+#userpage_03 .body-section .item-userpage_03 .wrap-img{
+    padding-right: 20px;
+}
+#userpage_03 .body-section .item-userpage_03 .wrap-img img {
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #cdd4d8;
+}
+/*-----------*/
+#userpage_03 .body-section .item-userpage_03 .wrap-content h3.title-product {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #505A5E;
+}
+#userpage_03 .body-section .item-userpage_03 .wrap-content p.count {
+    font-size: 14px;
+    color: #505A5E;
+    font-weight: 600;
+}
+/*-------------------------*/
+/* End Recommend */
+/*-------------------------*/

@@ -1,0 +1,83 @@
+
+#hashtagdetail.section{
+    position: relative;
+}
+/* Title Section */
+#hashtagdetail.section .header-section .contain-title-section-page{
+    padding: 70px 0 60px;
+    background: #283c50;
+}
+#hashtagdetail.section .contain-title-section-page h2.title-section {
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 500;
+    color: #5693f0;
+    text-align: center;
+    margin:0 0 10px;
+}
+#hashtagdetail.section .contain-title-section-page p.sub-title {
+    font-size: 16px;
+    color: #2b3539;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+/* Wrap date time Header */
+#hashtagdetail.section .header-section .wrap-date-time {
+    padding: 65px 0 25px;
+}
+#hashtagdetail.section .header-section .wrap-date-time p.text {
+    text-align: right;
+    font-size: 18px;
+    color: #505A5E;
+    font-weight: 600;
+}
+#hashtagdetail.section .header-section .wrap-date-time p.text span.blue {
+    color: #3497cc;
+}
+
+/*-------------------------*/
+/* Hashtag */
+/*-------------------------*/
+#hashtagdetail .body-section{
+    margin-top: 10px;
+}
+#hashtagdetail .body-section .container{
+    position: relative;
+}
+/* item Spot */
+#hashtagdetail .body-section .wrap-item-hashtag{
+    margin-top: 20px;
+    display: none;
+}
+#hashtagdetail .body-section .item-hashtag{
+    padding: 0 8px;
+    border-radius: 5px;
+    border: 1px solid #c8d2d6;
+    background: #fff;
+}
+#hashtagdetail .body-section .item-hashtag .wrap-text{
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: left;
+}
+#hashtagdetail .body-section .item-hashtag .wrap-text img{
+    margin-right: 10px;
+}
+#hashtagdetail .body-section .item-hashtag .wrap-text span{
+    color: #3c464a;
+}
+/* Swiper navText Spot */
+#hashtagdetail .body-section .swiper-button-next,#hashtagdetail .body-section .swiper-container-rtl .swiper-button-prev{
+    background: none;
+    right: -110px;
+    width: 64px;
+    height: 64px;
+}
+#hashtagdetail .body-section .swiper-button-prev,#hashtagdetail .body-section .swiper-container-rtl .swiper-button-next{
+    background: none;
+    left: -110px;
+    width: 64px;
+    height: 64px;
+}

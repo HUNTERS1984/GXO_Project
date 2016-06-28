@@ -1,0 +1,300 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 23, 2016, 9:49:57 AM
+    Author     : Akira Nayoka
+*/
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+a:hover, a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+}
+img{
+    max-width: 100%;
+}
+.aligncenter{
+    text-align: center;
+}
+.col-xs-15, .col-sm-15, .col-md-15, .col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.main-contain-box{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform: translate3d(0px, 0px, 0px);
+    backface-visibility: hidden;
+    transition: all 300ms ease;
+}
+/* Page */
+/*-------------------------*/
+/* Sidebar */
+/*-------------------------*/
+.sidebar {
+    position: fixed;
+    width: 240px;
+    height: 100%;
+    background: #283c50;
+    z-index: 100;
+
+    top: 0px;
+    left: -240px;
+    width: 240px;
+    height: 100%;
+    position: absolute;
+    z-index: 888888;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+/* button */
+.sidebar .wrap-button {
+    padding: 25px 15px;
+}
+.sidebar .wrap-button button {
+    color: #fff;
+    width: 100%;
+    font-weight: 700;
+    background: #5693f0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.sidebar .wrap-button button:hover {
+}
+/* List */
+.sidebar .main-nav {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar .main-nav li {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.sidebar .main-nav li:hover, .sidebar .main-nav li.active {
+    background: #314961;
+}
+.sidebar .main-nav li a{
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    display: block;
+}
+/*-------------------------*/
+/* End Sidebar */
+/*-------------------------*/
+
+/*-------------------------*/
+/* Header */
+/*-------------------------*/
+.header {
+    padding: 10px 15px;
+    background: #5693f0;
+    font-size: 24px;
+}
+/* icon */
+.header .icon-menu {
+    color: white;
+    float: left;
+    width: 30%;
+    position: relative;
+    z-index: 150;
+}
+.header .icon-menu a img.icon-menu-img {
+    max-width: 60px;
+}
+.header .wrap-icon {
+    float: right;
+    width: 30%;
+}
+.header .wrap-icon span {
+    float: right;
+    color: #fff;
+    cursor: pointer;
+}
+.header .wrap-icon .icon-search, .header .wrap-icon .icon-fav {
+    max-width: 60px;
+}
+/* logo */
+.header .wrap-logo {
+    float: left;
+    width: 40%;
+    padding: 10px 0;
+}
+.header .wrap-logo img{
+    margin: 0 auto;
+}
+/* Contain Search and Fav */
+.contain-box-search, .contain-box-fav {
+    position: fixed;
+    background: rgba(24, 43, 64, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+}
+.contain-box-search a.btn-close, .contain-box-fav a.btn-close {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 20px;
+    color: #fff;
+    z-index: 20;
+}
+.contain-box-fav .wrap-fav-page,.contain-box-search .wrap-search-page{
+    padding-top: 140px;
+    text-align: center;
+}
+/* Search */
+.contain-box-search .wrap-search-page #search-form .input-me {
+    height: 65px;
+    font-size: 20px;
+}
+.contain-box-search .wrap-search-page #search-form .button-me{
+    padding: 20px;
+    background: #5693f0;
+    height: 65px;
+    border: 1px solid white;
+    border-left: none;
+}
+/* Fav */
+.contain-box-fav .wrap-fav-page h2.title-bg-fav {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.contain-box-fav .wrap-fav-page p.sub {
+    font-size: 18px;
+    color: #fafafa;
+}
+.contain-box-fav .wrap-fav-page .wrap {
+    margin: 60px 0;
+}
+.contain-box-fav span.wrap-icon-fav img {
+    max-width: 200px;
+    margin: 0 auto;
+}
+.contain-box-fav .wrap-fav-page a.btn-insta {
+    padding: 8px 90px;
+    background: #5693f0;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+/*-------------------------*/
+/* End Header */
+/*-------------------------*/
+
+/*-------------------------*/
+/* Banner */
+/*-------------------------*/
+.navigation-carousel-pc{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navigation-carousel-pc li {
+    display: inline-block;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.navigation-carousel-pc li:hover a:after, .navigation-carousel-pc li.active a:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #5693f0;
+    left: 0;
+    bottom: 0;
+}
+.navigation-carousel-pc li a {
+    display: block;
+    padding: 0 65px;
+    text-transform: uppercase;
+    height: 60px;
+    line-height: 60px;
+    color: #c0c3c4;
+    font-size: 16px;
+    position: relative;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.navigation-carousel-pc li:hover a, .navigation-carousel-pc li.active a {
+    color: #283236;
+}
+
+.navigation-carousel .item-nav{
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+.navigation-carousel .item-nav.swiper-slide-active span.line-bottom {
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: 5px;
+    background: #5693f0;
+    bottom: 0px;
+    left: calc(50% - 15%);
+}
+
+#banner .swiper-button-next{
+    background: url(../../img/btn_sp_tab_right.png) center center no-repeat;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 60px;
+    height: 60px;
+    top: 30px;
+}
+#banner .swiper-button-prev{
+    background: url(../../img/btn_sp_tab_left.png) center center no-repeat;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    width: 60px;
+    height: 60px;
+    top: 30px;
+}
+/*-------------------------*/
+/* End banner */
+/*-------------------------*/
+/* Show more */
+.section .show-more {
+    padding: 20px 0;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #c8d2d6;
+    font-size: 16px;
+    font-weight: 600;
+    color: #46d6be;
+    display: block;
+    text-decoration: none;
+    margin: 40px 0 104px;
+}
+@media (max-width:768px){
+    .section .show-more {
+        margin: 40px 0 70px;
+    }
+}
+/* Swiper */
+.owl-stage{
+    min-width: 1000px !important;
+}

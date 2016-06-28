@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 23, 2016, 9:49:57 AM
+    Author     : Akira Nayoka
+*/
+/* Footer */
+.footer {
+    padding-top: 80px;
+    background: #283c50;
+}
+
+.footer .each-top-foo {
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+/* title top footer */
+.footer .each-top-foo h2.title-foo {
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cdd0d0;
+    font-size: 20px;
+    color: #c0c3c4;
+    margin-bottom: 15px;
+}
+/* list top footer */
+.footer .each-top-foo ul.list-foo {
+    list-style: none;
+    padding: 0;
+}
+.footer .each-top-foo ul.list-foo li a {
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color: white;
+}
+/* last collum top footer */
+.footer .each-top-foo h1.company-name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.footer .each-top-foo p.text-company {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.footer .each-top-foo p.map {
+    margin-bottom: 45px;
+}
+
+.footer .each-top-foo  span.social-icon {
+    display: inline-block;
+    margin-right: 35px;
+    max-width: 50px;
+}
+/* Logo */
+.footer-logo img {
+    margin-bottom: 30px;
+}
+p.sub-foo-logo{
+    color: #d4d8dc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.margin-center {
+    margin: 0 auto;
+}
+.footer p.final-foo {
+    background: #23374b;
+    padding: 15px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+@media (min-width: 768px)
+{
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
