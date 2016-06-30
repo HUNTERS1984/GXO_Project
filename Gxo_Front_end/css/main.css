@@ -1,22 +1,23 @@
 @import url(../css/layout/header.css);
 @import url(style.css);
-@import url(../page/new-spot/css/newspot.css);
-@import url(../page/ranking/css/ranking.css);
-@import url(../page/recommend/css/reommend.css);
+@import url(newspot.css);
+@import url(ranking.css);
+@import url(reommend.css);
 
-@import url(../page/group/css/group.css);
-@import url(../page/group/css/groupdetail_01.css);
-@import url(../page/group/css/groupdetail_03.css);
+@import url(group.css);
+@import url(groupdetail_01.css);
+@import url(groupdetail_03.css);
 
-@import url(../page/category/css/category.css);
-@import url(../page/category/css/categorydetail.css);
+@import url(category.css);
+@import url(categorydetail.css);
 
-@import url(../page/hashtag/css/hashtag.css);
-@import url(../page/hashtag/css/hashtagdetail.css);
-@import url(../page/hashtag/css/hashtagdetailcontact.css);
+@import url(hashtag.css);
+@import url(hashtagdetail.css);
 
-@import url(../page/mypage/css/mypage.css);
-@import url(../page/userpage/css/userpage.css);
-@import url(../page/userpage/css/userpage_03.css);
+@import url(contact.css);
+
+@import url(mypage.css);
+@import url(userpage.css);
+@import url(userpage_03.css);
 
 @import url(../css/layout/footer.css);

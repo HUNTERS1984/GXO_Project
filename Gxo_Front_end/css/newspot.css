@@ -1,0 +1,81 @@
+
+#spot.section{
+    position: relative;
+}
+/* Title Section */
+#spot.section .header-section .contain-title-section-page{
+    padding: 70px 0 60px;
+    background: #283c50;
+}
+#spot.section .contain-title-section-page h2.title-section {
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 500;
+    color: #5693f0;
+    text-align: center;
+    margin:0 0 10px;
+}
+#spot.section .contain-title-section-page p.sub-title {
+    font-size: 16px;
+    color: #2b3539;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+/* Wrap date time Header */
+#spot.section .header-section .wrap-date-time-page {
+    padding: 65px 0 25px;
+}
+#spot.section .header-section .wrap-date-time-page p.text {
+    text-align: right;
+    font-size: 18px;
+    color: #505A5E;
+    font-weight: 600;
+}
+#spot.section .header-section .wrap-date-time-page p.text span.blue {
+    color: #3497cc;
+}
+
+/*-------------------------*/
+/* Spot */
+/*-------------------------*/
+#spot .body-section .container{
+    position: relative;
+}
+/* item Spot */
+#spot .body-section .wrap-item-spot{
+    margin-top: 20px;
+    display: none;
+}
+#spot .body-section .item-spot{
+    padding: 0 8px;
+    border-radius: 5px;
+    border: 1px solid #c8d2d6;
+    background: #fff;
+    position: relative;
+}
+#spot .body-section .item-spot .wrap-text{
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: left;
+}
+#spot .body-section .item-spot .wrap-text img{
+    margin-right: 10px;
+}
+#spot .body-section .item-spot .wrap-text span{
+    color: #3c464a;
+}
+/* Swiper navText Spot */
+#spot .body-section .swiper-button-next,#spot .body-section .swiper-container-rtl .swiper-button-prev{
+    background: none;
+    right: -110px;
+    width: 64px;
+    height: 64px;
+}
+#spot .body-section .swiper-button-prev,#spot .body-section .swiper-container-rtl .swiper-button-next{
+    background: none;
+    left: -110px;
+    width: 64px;
+    height: 64px;
+}

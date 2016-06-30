@@ -53,15 +53,25 @@ and open the template in the editor.
 .footer .each-top-foo p.map {
     margin-bottom: 45px;
 }
+.footer .each-top-foo p.map img{
+    width: 100%;
+    border-radius: 4px;
+}
 
 .footer .each-top-foo  span.social-icon {
     display: inline-block;
     margin-right: 35px;
     max-width: 50px;
 }
+@media (max-width: 768px){
+    .footer .each-top-foo{
+        padding: 0;
+    }
+}
 /* Logo */
 .footer-logo img {
     margin-bottom: 30px;
+    margin-top: 50px;
 }
 p.sub-foo-logo{
     color: #d4d8dc;

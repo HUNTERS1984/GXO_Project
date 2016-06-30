@@ -1,3 +1,4 @@
+
 // Banner swiper
 jQuery('.navigation-carousel-pc li a').click(function(e) {
     e.preventDefault();
@@ -23,9 +24,11 @@ jQuery('.icon-menu a').click(function() {
     nvnopen = !nvnopen;
     if (nvnopen) {
         jQuery('.main-contain-box').css('transform', 'translate3d(240px, 0px, 0px)');
+        jQuery('.menu-scroll-div').css('transform', 'translate3d(240px, 0px, 0px)');
     }
     else {
         jQuery('.main-contain-box').css('transform', 'translate3d(0px, 0px, 0px)');
+        jQuery('.menu-scroll-div').css('transform', 'translate3d(0px, 0px, 0px)');
     }
 });
 // Banner swiper
@@ -45,8 +48,8 @@ var navbannerswiper = new Swiper('.navigation-carousel', {
     onSlideChangeEnd: function(swiper) {
         bannerswiper.slideTo(swiper.activeIndex, 300, false);
         jQuery('.navigation-carousel-pc li').removeClass('active');
-        nthchild=swiper.activeIndex+1;
-        jQuery('.navigation-carousel-pc li:nth-child('+ nthchild +')').addClass('active');
+        nthchild = swiper.activeIndex + 1;
+        jQuery('.navigation-carousel-pc li:nth-child(' + nthchild + ')').addClass('active');
     }
 });
 var bannerswiper = new Swiper('.swiper-banner', {
@@ -57,8 +60,8 @@ var bannerswiper = new Swiper('.swiper-banner', {
     onSlideChangeEnd: function(swiper) {
         navbannerswiper.slideTo(swiper.activeIndex, 300, false);
         jQuery('.navigation-carousel-pc li').removeClass('active');
-        nthchild=swiper.activeIndex+1;
-        jQuery('.navigation-carousel-pc li:nth-child('+ nthchild +')').addClass('active');
+        nthchild = swiper.activeIndex + 1;
+        jQuery('.navigation-carousel-pc li:nth-child(' + nthchild + ')').addClass('active');
     }
 });
 // Spot swiper
@@ -68,8 +71,10 @@ var swiper = new Swiper('#spot-index .list-spot', {
     nextButton: '#spot-index .swiper-button-next',
     prevButton: '#spot-index .swiper-button-prev',
     spaceBetween: 20,
+    preventClicks: false,
+    preventClicksPropagation: false,
     breakpoints: {
-        1024: {
+        980: {
             slidesPerColumn: 2,
             slidesPerView: 4,
             spaceBetween: 20
@@ -80,16 +85,20 @@ var swiper = new Swiper('#spot-index .list-spot', {
             spaceBetween: 20
         },
         640: {
-            width: 300,
             slidesPerColumn: 1,
-            slidesPerView: 1,
-            spaceBetween: 10
+            slidesPerView: 2,
+            spaceBetween: 10,
+            centeredSlides: true,
+            autoplay: 3000,
+            initialSlide: 1
         },
         320: {
-            width: 200,
             slidesPerColumn: 1,
             slidesPerView: 1,
-            spaceBetween: 10
+            spaceBetween: 10,
+            width: 200,
+            autoplay: 3000,
+            initialSlide: 0
         }
     }
 });
@@ -340,3 +349,45 @@ $(function() {
         }
     });
 });
+
+// SCROLL DIV
+jQuery('.menu-scroll-div a.gotop').click(function(e) {
+    // prevent default action
+    e.preventDefault();
+    jQuery('.menu-scroll-div a.gotop').addClass('active');
+    jQuery(this).removeClass('active');
+    if (jQuery('.menu-scroll-div').hasClass('menu-hide')) {
+        jQuery('.menu-scroll-div').removeClass('menu-hide');
+    }
+    else {
+        jQuery('.menu-scroll-div').addClass('menu-hide');
+    }
+});
+
+jQuery('.menu-scroll-div ul li a').click(function(e) {
+    // prevent default action
+    e.preventDefault();
+    scrollToElement(jQuery(this).attr('href'), 500);
+});
+
+jQuery('a.jumptop').click(function(e) {
+    // prevent default action
+    e.preventDefault();
+    scrollToElement(jQuery(this).attr('href'), 500);
+});
+$(document).scroll(function() {
+    var scrollPosition = $(document).scrollTop();
+    var scrollReference = $("#banner").height();
+    if (scrollPosition >= scrollReference) {
+        $('a.jumptop').fadeIn();
+    } else {
+        $('a.jumptop').fadeOut();
+    }
+});
+
+var scrollToElement = function(el, ms) {
+    var speed = (ms) ? ms : 300;
+    jQuery('html,body').animate({
+        scrollTop: jQuery(el).offset().top
+    }, speed);
+}
