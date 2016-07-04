@@ -7,6 +7,12 @@ jQuery('.navigation-carousel-pc li a').click(function(e) {
 });
 // Search, Fav Click 
 var nvnopen = false;
+jQuery('.show-notifi').click(function(){
+    jQuery('.contain-box-notifi').fadeIn();
+});
+jQuery('.ok-notifi').click(function(){
+    jQuery('.contain-box-notifi').fadeOut();
+});
 jQuery('.wrap-icon .search-icon').click(function() {
     jQuery('.contain-box-search').fadeIn();
 });
@@ -234,6 +240,16 @@ $(function() {
             $("#groupdetail_01 .show-more").html('No more'); // alert if there are none left
         }
     });
+    
+    
+    $("#groupdetail_01 .body-section .wrap-item-group").slice(0, 4).show(); // select the first ten
+    $("#groupdetail_01 .show-more").click(function(e) { // click event for load more
+        e.preventDefault();
+        $("#groupdetail_01 .body-section .wrap-item-group:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
+        if ($("#groupdetail_01 .body-section .wrap-item-group:hidden").length === 0) { // check if any hidden divs still exist
+            $("#groupdetail_01 .show-more").html('No more'); // alert if there are none left
+        }
+    });
 });
 jQuery('.action-page').click(function() {
     if (jQuery(this).hasClass('active')) {
@@ -243,14 +259,20 @@ jQuery('.action-page').click(function() {
         jQuery(this).addClass('active');
     }
 });
-jQuery('.wrap-status a').click(function() {
+jQuery('#groupdetail_01 .wrap-status a:first-child').click(function() {
     if (jQuery(this).hasClass('disabled')) {
         jQuery('.wrap-status a').addClass('disabled');
         jQuery(this).removeClass('disabled');
+        jQuery('.body-section').addClass('hide');
+        jQuery('.rowstyle').removeClass('hide');
     }
-    else {
-        jQuery('.wrap-status a').removeClass('disabled');
-        jQuery(this).addClass('disabled');
+});
+jQuery('#groupdetail_01 .wrap-status a:last-child').click(function() {
+    if (jQuery(this).hasClass('disabled')) {
+        jQuery('.wrap-status a').addClass('disabled');
+        jQuery(this).removeClass('disabled');
+        jQuery('.body-section').removeClass('hide');
+        jQuery('.rowstyle').addClass('hide');
     }
 });
 //GROUP DETAIL 03

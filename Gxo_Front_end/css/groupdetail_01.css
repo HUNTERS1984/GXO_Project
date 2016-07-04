@@ -194,3 +194,25 @@
 /*-------------------------*/
 /* End Group */
 /*-------------------------*/
+#groupdetail_01 .body-section .wrap-item-group{
+    padding: 10px;
+    display: none;
+}
+#groupdetail_01 .body-section .item-group{
+    padding: 0 8px;
+    border-radius: 5px;
+    border: 1px solid #c8d2d6;
+    background: #fff;
+    position: relative;
+}
+#groupdetail_01 .body-section .item-group .wrap-text{
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: left;
+}
+#groupdetail_01 .body-section .item-group .wrap-text img{
+    margin-right: 20px;
+}
+#groupdetail_01 .body-section .item-group .wrap-text span{
+    color: #3c464a;
+}

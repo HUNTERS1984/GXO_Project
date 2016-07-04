@@ -9,7 +9,6 @@ and open the template in the editor.
 */
 /* Footer */
 .footer {
-    padding-top: 80px;
     background: #283c50;
 }
 
@@ -25,6 +24,7 @@ and open the template in the editor.
     font-size: 20px;
     color: #c0c3c4;
     margin-bottom: 15px;
+    margin-top: 80px;
 }
 /* list top footer */
 .footer .each-top-foo ul.list-foo {

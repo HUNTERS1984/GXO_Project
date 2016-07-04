@@ -44,13 +44,12 @@
 /* item Recommend*/
 
 #recommend .body-section .wrap-item-recommend{
-    margin-top: 20px;
+    margin-top: 60px;
     display: none;
 }
 #recommend .body-section .item-recommend {
     position: relative;
     color: #c0c3c4;
-    margin-bottom: 20px;
 }
 #recommend .body-section .item-recommend .wrap-img {
     position: relative;
