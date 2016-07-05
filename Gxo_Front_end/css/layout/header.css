@@ -209,12 +209,18 @@ img{
     max-width: 200px;
     margin: 0 auto;
 }
-.contain-box-fav .wrap-fav-page a.btn-insta {
+.contain-box-fav .wrap-fav-page .btn-insta {
     padding: 8px 90px;
     background: #5693f0;
     border: none;
     color: white;
     font-size: 18px;
+}
+.contain-box-fav .wrap-fav-page .btn-insta a{
+    color: #ddd;
+}
+.contain-box-fav .wrap-fav-page .btn-insta a:hover{
+    color: #fff;
 }
 /*-------------------------*/
 /* End Header */

@@ -40,8 +40,8 @@
     -o-transition: all 0.3s
 }
 #userpage_03.section .action-page.active,#userpage_03.section .action-page:hover{
-    background: #5693f0;
-    border: 1px solid #5693f0;
+    background: #78ccf8;
+    border: 1px solid #78ccf8;
 }
 @media (max-width: 768px){
     #userpage_03.section .action-page{
@@ -112,7 +112,7 @@
     position: absolute;
     padding: 6px 17px;
     font-size: 25px;
-    background: #5693f0;
+    background: #78ccf8;
     color: white;
     top: 0px;
     left: 0px;

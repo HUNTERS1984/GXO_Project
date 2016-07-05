@@ -11,7 +11,7 @@
     text-transform: uppercase;
     font-size: 42px;
     font-weight: 500;
-    color: #5693f0;
+    color: #78ccf8;
     text-align: center;
     margin:0 0 10px;
 }
@@ -38,8 +38,8 @@
     -o-transition: all 0.3s
 }
 #groupdetail_01.section .action-page.active,.section .action-page:hover{
-    background: #5693f0;
-    border: 1px solid #5693f0;
+    background: #78ccf8;
+    border: 1px solid #78ccf8;
 }
 @media (max-width: 768px){
     #groupdetail_01.section .action-page{
@@ -55,14 +55,29 @@
         padding: 45px 0;
     }
 }
-#groupdetail_01.section .header-section .wrap-status a{
-    border: 1px solid #ced2d6;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
+#groupdetail_01.section .header-section .wrap-status ul{
+    list-style: none;
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-#groupdetail_01.section .header-section .wrap-status a.disabled{
+#groupdetail_01.section .header-section .wrap-status ul li{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    border: 1px solid #ced2d6;
+}
+#groupdetail_01.section .header-section .wrap-status ul li a{
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+}
+#groupdetail_01.section .header-section .wrap-status ul li.disabled{
     background: #e2e6ea;
+}
+#groupdetail_01.section .header-section .wrap-status ul li.disabled a{
     color: #a0a9ae;
 }
 /*-------------------------*/
@@ -70,10 +85,10 @@
 /*-------------------------*/
 /* Row group */
 #groupdetail_01 .body-section{
-    margin-top: -35px;
+    margin-top: -20px;
 }
 #groupdetail_01 .row-group {
-    margin-top: 35px;
+    margin-top: 20px;
     border: 2px solid #cdd4d8;
     border-radius: 8px;
     overflow: hidden;
@@ -195,8 +210,9 @@
 /* End Group */
 /*-------------------------*/
 #groupdetail_01 .body-section .wrap-item-group{
-    padding: 10px;
+    padding: 0 10px;
     display: none;
+    margin-top: 20px;
 }
 #groupdetail_01 .body-section .item-group{
     padding: 0 8px;

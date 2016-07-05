@@ -154,7 +154,7 @@ $(function() {
         e.preventDefault();
         $("#spot .body-section .wrap-item-spot:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
         if ($("#spot .body-section .wrap-item-spot:hidden").length === 0) { // check if any hidden divs still exist
-            $("#spot .show-more").html('No more'); // alert if there are none left
+            $("#spot .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -164,7 +164,7 @@ $(function() {
         e.preventDefault();
         $("#ranking .body-section .wrap-item-ranking:hidden").slice(0, 5).show(); // select next 10 hidden divs and show them
         if ($("#ranking .body-section .wrap-item-ranking:hidden").length === 0) { // check if any hidden divs still exist
-            $("#ranking .show-more").html('No more'); // alert if there are none left
+            $("#ranking .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -174,7 +174,7 @@ $(function() {
         e.preventDefault();
         $("#recommend .body-section .wrap-item-recommend:hidden").slice(0, 5).show(); // select next 10 hidden divs and show them
         if ($("#recommend .body-section .wrap-item-recommend:hidden").length === 0) { // check if any hidden divs still exist
-            $("#recommend .show-more").html('No more'); // alert if there are none left
+            $("#recommend .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -206,7 +206,7 @@ $(function() {
         e.preventDefault();
         $("#group .row-group:hidden").slice(0, 2).show(); // select next 10 hidden divs and show them
         if ($("#group .row-group:hidden").length === 0) { // check if any hidden divs still exist
-            $("#group .show-more").html('No more'); // alert if there are none left
+            $("#group .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -237,7 +237,7 @@ $(function() {
         e.preventDefault();
         $("#groupdetail_01 .row-group:hidden").slice(0, 2).show(); // select next 10 hidden divs and show them
         if ($("#groupdetail_01 .row-group:hidden").length === 0) { // check if any hidden divs still exist
-            $("#groupdetail_01 .show-more").html('No more'); // alert if there are none left
+            $("#groupdetail_01 .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
     
@@ -247,7 +247,7 @@ $(function() {
         e.preventDefault();
         $("#groupdetail_01 .body-section .wrap-item-group:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
         if ($("#groupdetail_01 .body-section .wrap-item-group:hidden").length === 0) { // check if any hidden divs still exist
-            $("#groupdetail_01 .show-more").html('No more'); // alert if there are none left
+            $("#groupdetail_01 .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -259,18 +259,18 @@ jQuery('.action-page').click(function() {
         jQuery(this).addClass('active');
     }
 });
-jQuery('#groupdetail_01 .wrap-status a:first-child').click(function() {
-    if (jQuery(this).hasClass('disabled')) {
-        jQuery('.wrap-status a').addClass('disabled');
-        jQuery(this).removeClass('disabled');
+jQuery('#groupdetail_01 .wrap-status li:first-child a').click(function() {
+    if (jQuery(this).parent().hasClass('disabled')) {
+        jQuery('.wrap-status a').parent().addClass('disabled');
+        jQuery(this).parent().removeClass('disabled');
         jQuery('.body-section').addClass('hide');
         jQuery('.rowstyle').removeClass('hide');
     }
 });
-jQuery('#groupdetail_01 .wrap-status a:last-child').click(function() {
-    if (jQuery(this).hasClass('disabled')) {
-        jQuery('.wrap-status a').addClass('disabled');
-        jQuery(this).removeClass('disabled');
+jQuery('#groupdetail_01 .wrap-status li:last-child a').click(function() {
+    if (jQuery(this).parent().hasClass('disabled')) {
+        jQuery('.wrap-status a').parent().addClass('disabled');
+        jQuery(this).parent().removeClass('disabled');
         jQuery('.body-section').removeClass('hide');
         jQuery('.rowstyle').addClass('hide');
     }
@@ -282,7 +282,7 @@ $(function() {
         e.preventDefault();
         $("#groupdetail_03 .body-section .wrap-item-group:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
         if ($("#groupdetail_03 .body-section .wrap-item-group:hidden").length === 0) { // check if any hidden divs still exist
-            $("#groupdetail_03 .show-more").html('No more'); // alert if there are none left
+            $("#groupdetail_03 .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -301,7 +301,7 @@ $(function() {
         e.preventDefault();
         $("#category .row-cate:hidden").slice(0, 2).show(); // select next 10 hidden divs and show them
         if ($("#category .row-cate:hidden").length === 0) { // check if any hidden divs still exist
-            $("#category .show-more").html('No more'); // alert if there are none left
+            $("#category .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -312,7 +312,7 @@ $(function() {
         e.preventDefault();
         $("#categorydetail .body-section .wrap-item-categorydetail:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
         if ($("#categorydetail .body-section .wrap-item-categorydetail:hidden").length === 0) { // check if any hidden divs still exist
-            $("#categorydetail .show-more").html('No more'); // alert if there are none left
+            $("#categorydetail .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -323,7 +323,7 @@ $(function() {
         e.preventDefault();
         $("#hashtag .body-section .wrap-item-hashtag:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
         if ($("#hashtag .body-section .wrap-item-hashtag:hidden").length === 0) { // check if any hidden divs still exist
-            $("#hashtag .show-more").html('No more'); // alert if there are none left
+            $("#hashtag .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -334,7 +334,7 @@ $(function() {
         e.preventDefault();
         $("#hashtagdetail .body-section .wrap-item-hashtag:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
         if ($("#hashtagdetail .body-section .wrap-item-hashtag:hidden").length === 0) { // check if any hidden divs still exist
-            $("#hashtagdetail .show-more").html('No more'); // alert if there are none left
+            $("#hashtagdetail .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -345,7 +345,7 @@ $(function() {
         e.preventDefault();
         $("#mypage .body-section .wrap-item-mypage:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
         if ($("#mypage .body-section .wrap-item-mypage:hidden").length === 0) { // check if any hidden divs still exist
-            $("#mypage .show-more").html('No more'); // alert if there are none left
+            $("#mypage .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -356,7 +356,7 @@ $(function() {
         e.preventDefault();
         $("#userpage .body-section .wrap-item-userpage:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
         if ($("#userpage .body-section .wrap-item-userpage:hidden").length === 0) { // check if any hidden divs still exist
-            $("#userpage .show-more").html('No more'); // alert if there are none left
+            $("#userpage .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
@@ -367,7 +367,7 @@ $(function() {
         e.preventDefault();
         $("#userpage_03 .body-section .wrap-item-userpage_03:hidden").slice(0, 4).show(); // select next 10 hidden divs and show them
         if ($("#userpage_03 .body-section .wrap-item-userpage_03:hidden").length === 0) { // check if any hidden divs still exist
-            $("#userpage_03 .show-more").html('No more'); // alert if there are none left
+            $("#userpage_03 .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
 });
