@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
 a.jumptop{
     position: fixed;
     bottom: 10px;
@@ -111,6 +112,7 @@ a.gotop.active{
     color: #5693f0;
     text-align: center;
     margin:0 0 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .section .contain-title-section p.sub-title {
     font-size: 16px;

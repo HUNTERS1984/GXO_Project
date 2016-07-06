@@ -14,6 +14,7 @@
     color: #78ccf8;
     text-align: center;
     margin:0 0 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #groupdetail_03.section .contain-title-section-page p.sub-page {
     font-size: 22px;
@@ -55,14 +56,29 @@
         padding: 45px 0;
     }
 }
-#groupdetail_03.section .header-section .wrap-status a{
-    border: 1px solid #ced2d6;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
+#groupdetail_03.section .header-section .wrap-status ul{
+    list-style: none;
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-#groupdetail_03.section .header-section .wrap-status a.disabled{
+#groupdetail_03.section .header-section .wrap-status ul li{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    border: 1px solid #ced2d6;
+}
+#groupdetail_03.section .header-section .wrap-status ul li a{
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+}
+#groupdetail_03.section .header-section .wrap-status ul li.disabled{
     background: #e2e6ea;
+}
+#groupdetail_03.section .header-section .wrap-status ul li.disabled a{
     color: #a0a9ae;
 }
 /* Swiper slider */

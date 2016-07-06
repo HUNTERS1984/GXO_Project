@@ -63,15 +63,24 @@ and open the template in the editor.
     margin-right: 35px;
     max-width: 50px;
 }
+@media (max-width:980px){
+    .footer .each-top-foo  span.social-icon {
+        margin-right: 14px;
+    }
+}
 @media (max-width: 768px){
     .footer .each-top-foo{
         padding: 0;
+    }
+    .footer .each-top-foo  span.social-icon {
+        margin-right: 35px;
     }
 }
 /* Logo */
 .footer-logo img {
     margin-bottom: 30px;
     margin-top: 50px;
+    max-width: 60px;
 }
 p.sub-foo-logo{
     color: #d4d8dc;

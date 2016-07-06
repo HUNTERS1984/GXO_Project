@@ -261,7 +261,7 @@ jQuery('.action-page').click(function() {
 });
 jQuery('#groupdetail_01 .wrap-status li:first-child a').click(function() {
     if (jQuery(this).parent().hasClass('disabled')) {
-        jQuery('.wrap-status a').parent().addClass('disabled');
+        jQuery('#groupdetail_01 .wrap-status a').parent().addClass('disabled');
         jQuery(this).parent().removeClass('disabled');
         jQuery('.body-section').addClass('hide');
         jQuery('.rowstyle').removeClass('hide');
@@ -269,7 +269,7 @@ jQuery('#groupdetail_01 .wrap-status li:first-child a').click(function() {
 });
 jQuery('#groupdetail_01 .wrap-status li:last-child a').click(function() {
     if (jQuery(this).parent().hasClass('disabled')) {
-        jQuery('.wrap-status a').parent().addClass('disabled');
+        jQuery('#groupdetail_01 .wrap-status a').parent().addClass('disabled');
         jQuery(this).parent().removeClass('disabled');
         jQuery('.body-section').removeClass('hide');
         jQuery('.rowstyle').addClass('hide');
@@ -285,6 +285,18 @@ $(function() {
             $("#groupdetail_03 .show-more").html('<span style="color:#f1f1f1">もっと見る</span>'); // alert if there are none left
         }
     });
+});
+jQuery('#groupdetail_03 .wrap-status li:first-child a').click(function() {
+    if (jQuery(this).parent().hasClass('disabled')) {
+        jQuery('#groupdetail_03 .wrap-status a').parent().addClass('disabled');
+        jQuery(this).parent().removeClass('disabled');
+    }
+});
+jQuery('#groupdetail_03 .wrap-status li:last-child a').click(function() {
+    if (jQuery(this).parent().hasClass('disabled')) {
+        jQuery('#groupdetail_03 .wrap-status a').parent().addClass('disabled');
+        jQuery(this).parent().removeClass('disabled');
+    }
 });
 // Category carousel
 jQuery('#category .list-bottom-row-cate').owlCarousel({
@@ -350,6 +362,18 @@ $(function() {
     });
 });
 //USERPAGE
+jQuery('#userpage .wrap-status li:first-child a').click(function() {
+    if (jQuery(this).parent().hasClass('disabled')) {
+        jQuery('#userpage .wrap-status a').parent().addClass('disabled');
+        jQuery(this).parent().removeClass('disabled');
+    }
+});
+jQuery('#userpage .wrap-status li:last-child a').click(function() {
+    if (jQuery(this).parent().hasClass('disabled')) {
+        jQuery('#userpage .wrap-status a').parent().addClass('disabled');
+        jQuery(this).parent().removeClass('disabled');
+    }
+});
 $(function() {
     $("#userpage .body-section .wrap-item-userpage").slice(0, 4).show(); // select the first ten
     $("#userpage .show-more").click(function(e) { // click event for load more
@@ -361,6 +385,18 @@ $(function() {
     });
 });
 //USER PAGE _03
+jQuery('#userpage_03 .wrap-status li:first-child a').click(function() {
+    if (jQuery(this).parent().hasClass('disabled')) {
+        jQuery('#userpage_03 .wrap-status a').parent().addClass('disabled');
+        jQuery(this).parent().removeClass('disabled');
+    }
+});
+jQuery('#userpage_03 .wrap-status li:last-child a').click(function() {
+    if (jQuery(this).parent().hasClass('disabled')) {
+        jQuery('#userpage_03 .wrap-status a').parent().addClass('disabled');
+        jQuery(this).parent().removeClass('disabled');
+    }
+});
 $(function() {
     $("#userpage_03 .body-section .wrap-item-userpage_03").slice(0, 4).show(); // select the first ten
     $("#userpage_03 .show-more").click(function(e) { // click event for load more

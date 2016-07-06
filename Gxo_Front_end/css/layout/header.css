@@ -128,10 +128,10 @@ img{
 .header .wrap-logo {
     float: left;
     width: 40%;
-    padding: 10px 0;
 }
 .header .wrap-logo img{
     margin: 0 auto;
+    max-width: 60px;
 }
 /* Contain Search and Fav */
 .contain-box-notifi {
